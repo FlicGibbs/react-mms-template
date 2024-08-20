@@ -111,7 +111,7 @@ const Subjects = () => {
         </div>
         {board.length > 0 && (
           <div className="game-board">
-            {board.map((b, i) => (
+            {board.map((b, _i) => (
               <GameBoardItem
                 key={`${b.id}_${b.value}`}
                 {...b}
