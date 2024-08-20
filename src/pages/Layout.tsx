@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand navbar-light bg-light">
         <a className="navbar-brand" href="#">
           <img
             width="150"
@@ -11,7 +11,7 @@ const Layout = () => {
             src="https://149463264.v2.pressablecdn.com/wp-content/uploads/2021/03/MMS-Logo-New-300x143.jpg"
           ></img>{" "}
         </a>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -21,7 +21,7 @@ const Layout = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
@@ -35,6 +35,13 @@ const Layout = () => {
               <a className="nav-link" href="#">
                 <Link className="nav-link" to="/subjects">
                   Subjects
+                </Link>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <Link className="nav-link" to="/teachers">
+                  Teachers
                 </Link>
               </a>
             </li>
